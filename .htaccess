@@ -26,6 +26,10 @@
 	ErrorDocument 404 index.php
 </IfModule>
 
+<IfModule mod_mime.c>
+	AddType application/javascript .js .mjs
+</IfModule>
+
 # Block direct access to hidden and sensitive files
 <FilesMatch "(^\.|\.env|\.sql|\.log|\.git)">
 	<IfModule authz_core_module>

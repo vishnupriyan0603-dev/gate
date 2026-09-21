@@ -21,10 +21,21 @@ class Documents extends BaseController
         if (!$doc || !$doc['filename']) {
             return $this->response->setStatusCode(404)->setBody('Not found');
         }
-        $root = ROOTPATH . 'document' . DIRECTORY_SEPARATOR;
         $name = basename($doc['filename']);
-        $file = $root . $name;
-        if (!is_file($file)) {
+        $candidates = [
+            ROOTPATH . 'document' . DIRECTORY_SEPARATOR . $name,
+            ROOTPATH . 'main' . DIRECTORY_SEPARATOR . 'document' . DIRECTORY_SEPARATOR . $name,
+            FCPATH . 'main' . DIRECTORY_SEPARATOR . 'document' . DIRECTORY_SEPARATOR . $name,
+            FCPATH . 'document' . DIRECTORY_SEPARATOR . $name,
+        ];
+        $file = null;
+        foreach ($candidates as $candidate) {
+            if (is_file($candidate)) {
+                $file = $candidate;
+                break;
+            }
+        }
+        if (!$file) {
             return $this->response->setStatusCode(404)->setBody('File missing: ' . $name);
         }
         // Allow range requests so PDF.js can stream large files.

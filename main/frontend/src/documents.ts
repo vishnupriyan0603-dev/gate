@@ -5,7 +5,15 @@ import { api, qs, qsa } from './api';
 import { toast } from './ui';
 import { pop, flash } from './fx';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
+const PDFJS_CDN_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs';
+try {
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+      ? pdfWorker
+      : PDFJS_CDN_WORKER;
+} catch {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_CDN_WORKER;
+}
 
 interface DocExtra {
   id: number;
