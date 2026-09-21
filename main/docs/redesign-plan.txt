@@ -1,0 +1,146 @@
+GATE EXAM PREPARATION — REDESIGN PLAN (phase-wise)
+Generated: 2026-09-18 | Scope: UI + flow fixes + advanced FX + DD-MM-YYYY + South-India IST
+Docroot: public/ | Backend: CodeIgniter 4 + PHP 8.2 | Frontend: Vite/TS + Tailwind v4 + DaisyUI
+
+================================================================
+SEC 1 — INVENTORY (verified from Routes.php, Views/pages, frontend/src)
+================================================================
+Routes (app/Config/Routes.php:8-18):
+  / + /dashboard            -> Home::index      -> pages/dashboard.php (301L) + dashboard.ts
+  /course                   -> Course::index    -> pages/course.php (113L, SSR) + course.ts
+  /course/(:segment)        -> Course::learn    -> pages/learn.php (228L) + course.ts
+  /training                 -> Training::index  -> pages/training.php (238L) + training.ts (505L)
+  /challenge                -> Training::challenge -> pages/challenge.php (68L) + training.ts
+  /performance              -> Performance::index -> pages/performance.php (155L, ECharts-only) + performance.ts
+  /documents                -> Documents::index -> pages/documents.php (129L, PDF.js) + documents.ts
+  /documents/stream/(:num)  -> Documents::stream (raw PDF, no view)
+  /calendar                 -> Calendar::index  -> pages/calendar.php (109L, FullCalendar) + calendar.ts
+  /settings                 -> Settings::index  -> pages/settings.php (189L) + settings.ts
+Shell: app/Views/partials/layout.php (game-sidebar/content/topbar/tabbar; tabbar omits
+  challenge, performance, settings, learn). No shared hero component — each page hand-rolls .quest-hero.
+Design system KEEPER: frontend/src/style.css:17-427 (quest-hero, mosaic 12-col, mastery,
+  quiz-opt, chips, hov-lift/glow, reveal, skeleton, per-page hero accents).
+Motion today: gsap+ScrollTrigger, lenis, tsparticles/slim, lottie-web (10 JSONs in
+  public/lottie/), three constellation (viz3d.ts:39), canvas-confetti, driver.js tour,
+  tippy.js, nprogress. See fx.ts, effects.ts, viz3d.ts, vite.config.ts chunk map.
+Dates today: storage ISO everywhere; display mixed (D, d M Y / d M Y / D MMM);
+  TZ App.php:136 = UTC (wrong for IST — "today" flips 5:30h late).
+
+================================================================
+SEC 2 — FOUNDATION (shell + tokens)
+================================================================
+2.1  NEW app/Views/partials/hero.php — shared quest-hero (title, subtitle, chips slot,
+     stats slot, particles opt-in via data-particles, per-page accent via body[data-page]).
+2.2  Mosaic rules: keep 12-col (.span-4/5/6/7/8/12); standard pairs 7/5 and 8/4;
+     never unjustified 100% stacks — mobile keeps 2-col KPIs, horizontal scroll rails.
+2.3  Mobile tabbar: add missing challenge/performance/settings/learn OR overflow menu.
+2.4  Tokens: data-reveal / data-count / data-tip / skeleton / empty-state unified.
+2.5  Data-attr FX API: data-tilt, data-click-fx, data-lottie, data-lottie-fly,
+     data-glb, data-svg-draw, data-motion-path, data-carousel.
+
+================================================================
+SEC 3 — PER-PAGE REDESIGN
+================================================================
+3.1 Dashboard: compress 6 stacked blocks -> hero(8+4) + KPI strip(4) + charts 7/5
+    (accuracy+heatmap) + mastery grid + orbit; sticky timer CTA; keep particles+typed.
+3.2 Course: unified hero (reuse partial); phase cards keep 7/5 mosaic; topic rows with
+    status rail (done/active/lock); progress bar visible on mobile (mini).
+3.3 Learn: quest-hero header + breadcrumb Course > Topic; grid 2/3+1/3 (main+aside);
+    per-topic KaTeX/Mermaid slots (replace hardcoded demo); status ring + done btn.
+3.4 Training: left rail collapsible -> horizontal swipe strip on mobile (swiper);
+    quiz stage min-h 380px; rail 8+4; manager span-12 with 2-col grid (CSS exists).
+3.5 Challenge: left-aligned hero (like others); rules collapsible; stage-first on mobile.
+3.6 Performance: ADD quest-hero; KPI 4-up; charts 7/5 + 5/7 pairs (accuracy/subjects,
+    targets/attempts, hours/mastery); weak-areas 3-up; lazy ECharts + loading states.
+3.7 Documents: quest-hero + toolbar (search grows, filter); masonry 3-col; card footer
+    -> icon buttons (view/rename) + compact tag select; empty-state Lottie.
+3.8 Calendar: slim hero (counts + sync only); month-jump horizontal scroll; 8/4 mosaic;
+    legend wraps on mobile (not hidden); bigger day hint text.
+3.9 Settings: single mosaic; forms 2-col->1-col mobile; DB counts 4-up->2-up mobile.
+
+================================================================
+SEC 4 — FLOW FIXES (small, testable first)
+================================================================
+4.1 /challenge stays top-level GET (Training::challenge) + breadcrumb Training > Challenge;
+    sidebar active stays 'training' (pageData already does this).
+4.2 /course/(:segment) -> (:num) + real 404 view (kills silent (int) cast redirect for
+    slugs like /course/intro-to-os). File: Routes.php + Course::learn.
+4.3 GET api/doc -> rename api/daily-plan; keep `doc` alias 1 release; document
+    todaytask (single day) vs calendar/daily-plan (full table). File: Routes.php + Api::dailyPlan.
+4.4 POST api/calendar/{date}/status: validate YYYY-MM-DD (400 otherwise); 404 when date
+    row missing (not silent "Updated"). File: Api::setDayStatus.
+4.5 Training best = MAX(correct/total) not MAX(correct) (6/10 must not beat 5/5).
+    File: Training::index.
+4.6 Group Course::learn docs query explicitly (subject docs + topic docs) with brackets.
+4.7 Shared POST quiz/result + Notion sync button helper (dedup dashboard/course/training).
+
+================================================================
+SEC 5 — FRONTEND DEDUP (no visual change)
+================================================================
+5.1 Shared initRings/initBars (dashboard.ts vs course.ts verbatim; performance repeats rAF).
+5.2 Merge course mini-quiz + training QuizEngine.check() quiz-opt renderer.
+5.3 Single accuracy-chart ECharts opts; single notion-sync button pattern.
+
+================================================================
+SEC 6 — ADVANCED FX (free plugins only)
+================================================================
+Choices locked: Lottie = LottieFiles free + 2 custom micro; 3D = @google/model-viewer GLB;
+GIF = banned (Lottie + WebP instead, <150KB lazy).
+6A Foundation:vite.config.ts add chunks model-viewer, swiper, auto-animate, split.
+    Honor prefers-reduced-motion + localStorage gate_fx=off (kills all motion incl.
+    model-viewer/swiper/auto-animate); IntersectionObserver pause for particles+Lottie.
+6B LottieFly NEW frontend/src/lottie-fly.ts (reuses chunk-lottie.js):
+    <div data-lottie-fly="success|loader|empty|trophy|rocket">; letter fallback first
+    (existing pattern effects.ts:312); lazy lottie-web; play on intersect.
+    New JSONs in public/lottie/: loader, success-check (custom), empty-box, trophy,
+    rocket, confetti-pop, timer-ring, book-flip (LottieFiles free license).
+    Placements: quiz right/wrong (training QuizEngine.check + course quiz), challenge
+    finish trophy, documents empty-state, calendar day-done check, settings sync
+    success, global page-loader (NProgress bar + 400ms Lottie overlay).
+6C 3D NEW frontend/src/hero-3d.ts + public/models/hero.glb (CC0: Poly Pizza / Quill by
+    Icosa / Google Scanned Objects — rocket DEFAULT, Draco <800KB) + poster.webp:
+    <model-viewer data-glb src poster auto-rotate camera-controls> in dashboard +
+    training heroes; dynamic import @google/model-viewer only when [data-glb] visible.
+    Keep viz3d.ts constellation (clickable planets) — hero.glb is decorative centerpiece.
+    Dispose on pagehide; skip on smallScreen/reducedMotion/fx-off; missing GLB fallback.
+6D SVG: .svg-draw paths (hero underline, performance target line, course phase
+    connector) with stroke-dashoffset scrub 1x via ScrollTrigger; 1 MotionPathPlugin
+    rocket orbit in quest-hero (built into gsap package — NO paid DrawSVG).
+6E Scroll/lists: keep Lenis + GSAP hero timeline + batch reveals; ADD split-type hero
+    titles (chars y:18 stagger 0.02) + swiper carousels (mastery mobile, training modes
+    mobile) + autoAnimate(#mcq-list, #doc-grid, #checklists).
+6F Micro: magnetic buttons (pointer:fine only), Lottie-icon toasts, flip countdown,
+    heat-cell pop, 100% accuracy Lottie overlay (extends ui.ts celebrate()).
+6G Perf budget: no chunk >250KB gzip except three/pdfjs; poster-first; lazy everything.
+Free-license log: model-viewer Apache-2.0, swiper MIT, auto-animate MIT, split-type MIT,
+    LottieFiles free (no premium), GLB CC0 only.
+
+================================================================
+SEC 7 — SOUTH-INDIA STANDARD (dates + IST)
+================================================================
+Rule: DISPLAY DD-MM-YYYY + IST (Asia/Kolkata); STORAGE/API ISO YYYY-MM-DD untouched.
+7.1 PHP: App.php appTimezone UTC->Asia/Kolkata (+ .env app.appTimezone, never commit);
+    date_default_timezone_set IST. DATE cols (task_date/session_date/exam_date) unchanged
+    (date-only, no shift). DATETIME (quiz created_at, notion_synced_at, Api now) stored
+    as-is, DISPLAYED IST. NEW fmt_dmy(?string $iso) helper -> 21-09-2026.
+    dashboard.php:28,228 use D, d-m-Y; course.php:58 d-m-Y; countdowns start-of-day IST.
+7.2 TS: dayjs utc+timezone plugins (dayjs dep exists); NEW api.ts fmtDMY(iso) =
+    dayjs.tz(iso,'Asia/Kolkata').format('DD-MM-YYYY') + todayStrIST().
+    Charts: axis DD-MM + tooltip DD-MM-YYYY IST (full 10-char crowds mobile axes).
+    calendar.ts FullCalendar { timeZone:'Asia/Kolkata', locale:'en-IN' }; weekday
+    toLocaleDateString('en-IN',{weekday:'long',timeZone:'Asia/Kolkata'}); eventDidMount
+    tooltip DD-MM-YYYY. Settings exam <input type=date> keeps ISO value + IST hint text.
+7.3 Validation: POST calendar/{date} ISO-only; DD-MM-YYYY -> 400
+    {error:'use YYYY-MM-DD, display is DD-MM-YYYY'}. Notion: parse IST, store ISO.
+7.4 QA: machine TZ UTC vs IST assert mission/today/heatmap match; 00:30 IST edge case.
+
+================================================================
+SEC 8 — EXECUTION ORDER + QA GATE
+================================================================
+Order: 1) this file 2) npm i 4 deps + GLB/poster/JSONs 3) Sec 4 flows 4) Sec 2 + 6A/6B/6C
+scaffolding 5) Sec 3 pages + motion map 6) Sec 7 dates/TZ 7) gate.
+Gate: composer test / vendor/bin/phpunit; tsc --noEmit; vite build -> public/assets;
+php spark routes; Lighthouse mobile >85; 360/768/1280 + reduced-motion + fx=off +
+UTC-vs-IST midnight + missing-GLB fallback passes.
+Defaults (override anytime): hero.glb=rocket; custom Lotties=loader+success-check;
+charts axis short/tooltip full.

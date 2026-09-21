@@ -1,0 +1,1235 @@
+[
+  {
+    "Id": "3d5e1176-b072-8165-849e-f9e3c27a5d83",
+    "Task": "Propositions, truth tables + 20 PYQs",
+    "Day": "Monday",
+    "Date": "2026-09-14",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Propositions-truth-tables-20-PYQs-3d5e1176b0728165849ef9e3c27a5d83"
+  },
+  {
+    "Id": "3d5e1176-b072-81a1-930f-cd736e76732d",
+    "Task": "Implication, equivalence, normal forms + 20 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-09-15",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Implication-equivalence-normal-forms-20-PYQs-3d5e1176b07281a1930fcd736e76732d"
+  },
+  {
+    "Id": "3d5e1176-b072-8173-8b7d-c80748a25557",
+    "Task": "Sets: operations, identities + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-09-16",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Sets-operations-identities-25-PYQs-3d5e1176b07281738b7dc80748a25557"
+  },
+  {
+    "Id": "3d5e1176-b072-81c3-9de1-c5e8e21bcb95",
+    "Task": "Relations: properties + 20 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-09-17",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Relations-properties-20-PYQs-3d5e1176b07281c39de1c5e8e21bcb95"
+  },
+  {
+    "Id": "3d5e1176-b072-8177-9338-eca64fa592d4",
+    "Task": "C basics, I/O, operators + 20 questions",
+    "Day": "Friday",
+    "Date": "2026-09-18",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/C-basics-I-O-operators-20-questions-3d5e1176b07281779338eca64fa592d4"
+  },
+  {
+    "Id": "3d5e1176-b072-8126-aaa5-dc87c03db642",
+    "Task": "Weekly revision + 40 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-09-19",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Weekly-revision-40-mixed-PYQs-3d5e1176b0728126aaa5dc87c03db642"
+  },
+  {
+    "Id": "3d5e1176-b072-81c3-821c-e6d7292b495f",
+    "Task": "6h: revision + 40 PYQs + mini test + analysis",
+    "Day": "Sunday",
+    "Date": "2026-09-20",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-revision-40-PYQs-mini-test-analysis-3d5e1176b07281c3821ce6d7292b495f"
+  },
+  {
+    "Id": "3d5e1176-b072-8142-b9b7-e9d2ce48f7a5",
+    "Task": "Functions: types and composition + 20 PYQs",
+    "Day": "Monday",
+    "Date": "2026-09-21",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Functions-types-and-composition-20-PYQs-3d5e1176b0728142b9b7e9d2ce48f7a5"
+  },
+  {
+    "Id": "3d5e1176-b072-813e-906d-f79de2deeec4",
+    "Task": "Counting: permutations and combinations + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-09-22",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Counting-permutations-and-combinations-25-PYQs-3d5e1176b072813e906df79de2deeec4"
+  },
+  {
+    "Id": "3d5e1176-b072-81e9-83a3-f65649622a0c",
+    "Task": "Pigeonhole + inclusion-exclusion + 20 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-09-23",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Pigeonhole-inclusion-exclusion-20-PYQs-3d5e1176b07281e983a3f65649622a0c"
+  },
+  {
+    "Id": "3d5e1176-b072-8154-a7aa-cf789f3d7b6a",
+    "Task": "Recurrence relations basics + 20 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-09-24",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Recurrence-relations-basics-20-PYQs-3d5e1176b0728154a7aacf789f3d7b6a"
+  },
+  {
+    "Id": "3d5e1176-b072-8178-a091-d88f620c62b2",
+    "Task": "C pointers + arrays + 25 questions",
+    "Day": "Friday",
+    "Date": "2026-09-25",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/C-pointers-arrays-25-questions-3d5e1176b0728178a091d88f620c62b2"
+  },
+  {
+    "Id": "3d5e1176-b072-81ff-8dff-f16f2e933fbf",
+    "Task": "Revision + 40 mixed PYQs, focus weak areas",
+    "Day": "Saturday",
+    "Date": "2026-09-26",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Revision-40-mixed-PYQs-focus-weak-areas-3d5e1176b07281ff8dfff16f2e933fbf"
+  },
+  {
+    "Id": "3d5e1176-b072-81e4-b06c-c59668a06c38",
+    "Task": "6h: revision + 40 PYQs + DM/C sectional test + analysis",
+    "Day": "Sunday",
+    "Date": "2026-09-27",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-revision-40-PYQs-DM-C-sectional-test-analysis-3d5e1176b07281e4b06cc59668a06c38"
+  },
+  {
+    "Id": "3d5e1176-b072-813d-a77b-e4efd4d0fb7f",
+    "Task": "Graph theory basics + 20 PYQs",
+    "Day": "Monday",
+    "Date": "2026-09-28",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Graph-theory-basics-20-PYQs-3d5e1176b072813da77be4efd4d0fb7f"
+  },
+  {
+    "Id": "3d5e1176-b072-81e9-ba87-d37933b8419d",
+    "Task": "Trees and properties + 20 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-09-29",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Trees-and-properties-20-PYQs-3d5e1176b07281e9ba87d37933b8419d"
+  },
+  {
+    "Id": "3d5e1176-b072-81f7-8ddf-e896d29e2819",
+    "Task": "Connectivity and components + 20 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-09-30",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Connectivity-and-components-20-PYQs-3d5e1176b07281f78ddfe896d29e2819"
+  },
+  {
+    "Id": "3d5e1176-b072-8117-8327-f2b71a482c67",
+    "Task": "BFS/DFS concepts + 20 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-10-01",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/BFS-DFS-concepts-20-PYQs-3d5e1176b07281178327f2b71a482c67"
+  },
+  {
+    "Id": "3d5e1176-b072-81a3-9c95-f7972ea61282",
+    "Task": "C recursion + 25 questions",
+    "Day": "Friday",
+    "Date": "2026-10-02",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/C-recursion-25-questions-3d5e1176b07281a39c95f7972ea61282"
+  },
+  {
+    "Id": "3d5e1176-b072-8128-8e32-c33cce87f8c0",
+    "Task": "C pointers, functions, recursion mix + 35 questions",
+    "Day": "Saturday",
+    "Date": "2026-10-03",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/C-pointers-functions-recursion-mix-35-questions-3d5e1176b07281288e32c33cce87f8c0"
+  },
+  {
+    "Id": "3d5e1176-b072-811c-bf01-e7c24c8a61cb",
+    "Task": "6h: revision + 50 PYQs + sectional test + analysis",
+    "Day": "Sunday",
+    "Date": "2026-10-04",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-revision-50-PYQs-sectional-test-analysis-3d5e1176b072811cbf01e7c24c8a61cb"
+  },
+  {
+    "Id": "3d5e1176-b072-81e0-90d9-def73f1b5657",
+    "Task": "DM revision: logic, sets, relations, functions + 30 PYQs",
+    "Day": "Monday",
+    "Date": "2026-10-05",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DM-revision-logic-sets-relations-functions-30-PYQs-3d5e1176b07281e090d9def73f1b5657"
+  },
+  {
+    "Id": "3d5e1176-b072-8130-a32e-e022576ff2cd",
+    "Task": "Counting + recurrence revision + 30 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-10-06",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Counting-recurrence-revision-30-PYQs-3d5e1176b0728130a32ee022576ff2cd"
+  },
+  {
+    "Id": "3d5e1176-b072-81ef-a87d-c1dab7d5b00f",
+    "Task": "Graph theory revision + 30 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-10-07",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Graph-theory-revision-30-PYQs-3d5e1176b07281efa87dc1dab7d5b00f"
+  },
+  {
+    "Id": "3d5e1176-b072-8122-8b12-c1652191d23d",
+    "Task": "C revision: arrays, pointers, recursion + 35 questions",
+    "Day": "Thursday",
+    "Date": "2026-10-08",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/C-revision-arrays-pointers-recursion-35-questions-3d5e1176b07281228b12c1652191d23d"
+  },
+  {
+    "Id": "3d5e1176-b072-81eb-af76-ec6fccfa4e55",
+    "Task": "DM + C timed mixed practice + review",
+    "Day": "Friday",
+    "Date": "2026-10-09",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DM-C-timed-mixed-practice-review-3d5e1176b07281ebaf76ec6fccfa4e55"
+  },
+  {
+    "Id": "3d5e1176-b072-81ec-a032-ed5ae02f1446",
+    "Task": "Phase 1 wrap-up + 60 mixed PYQs + short notes",
+    "Day": "Saturday",
+    "Date": "2026-10-10",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Phase-1-wrap-up-60-mixed-PYQs-short-notes-3d5e1176b07281eca032ed5ae02f1446"
+  },
+  {
+    "Id": "3d5e1176-b072-8185-9b75-cb5478ce6092",
+    "Task": "6h: Mock 1 + deep analysis + weak-topic list",
+    "Day": "Sunday",
+    "Date": "2026-10-11",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-Mock-1-deep-analysis-weak-topic-list-3d5e1176b07281859b75cb5478ce6092"
+  },
+  {
+    "Id": "3dee1176-b072-816f-9550-f4b7ec0f2e56",
+    "Task": "Arrays, prefix sums, two pointers + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-10-12",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Arrays-prefix-sums-two-pointers-25-PYQs-3dee1176b072816f9550f4b7ec0f2e56"
+  },
+  {
+    "Id": "3dee1176-b072-81e3-8b00-f05c2b93bd64",
+    "Task": "Linked lists: operations, reversal, cycles + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-10-13",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Linked-lists-operations-reversal-cycles-25-PYQs-3dee1176b07281e38b00f05c2b93bd64"
+  },
+  {
+    "Id": "3dee1176-b072-81ea-83eb-c68f0cd0a493",
+    "Task": "Stacks, queues, deque + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-10-14",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Stacks-queues-deque-25-PYQs-3dee1176b07281ea83ebc68f0cd0a493"
+  },
+  {
+    "Id": "3dee1176-b072-81b9-b298-c55b8eebd5e3",
+    "Task": "Hashing, collisions, applications + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-10-15",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Hashing-collisions-applications-25-PYQs-3dee1176b07281b9b298c55b8eebd5e3"
+  },
+  {
+    "Id": "3dee1176-b072-815f-92d6-ed8f94302679",
+    "Task": "Asymptotic analysis, Big-O/Theta/Omega + 25 PYQs",
+    "Day": "Friday",
+    "Date": "2026-10-16",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Asymptotic-analysis-Big-O-Theta-Omega-25-PYQs-3dee1176b072815f92d6ed8f94302679"
+  },
+  {
+    "Id": "3dee1176-b072-81e3-b846-f2408eba41e1",
+    "Task": "Weekly DS revision + 40–60 mixed questions + error log",
+    "Day": "Saturday",
+    "Date": "2026-10-17",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Weekly-DS-revision-40-60-mixed-questions-error-log-3dee1176b07281e3b846f2408eba41e1"
+  },
+  {
+    "Id": "3dee1176-b072-811b-bad2-e6f135d5a4bd",
+    "Task": "6h: revision + 40–60 PYQs + DS/Algo sectional test + analysis",
+    "Day": "Sunday",
+    "Date": "2026-10-18",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-revision-40-60-PYQs-DS-Algo-sectional-test-analysis-3dee1176b072811bbad2e6f135d5a4bd"
+  },
+  {
+    "Id": "3dee1176-b072-818d-bbf1-e01a5946b767",
+    "Task": "Binary trees, traversals, properties + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-10-19",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Binary-trees-traversals-properties-25-PYQs-3dee1176b072818dbbf1e01a5946b767"
+  },
+  {
+    "Id": "3dee1176-b072-818d-9f94-ff918f339749",
+    "Task": "BST operations and complexity + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-10-20",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/BST-operations-and-complexity-25-PYQs-3dee1176b072818d9f94ff918f339749"
+  },
+  {
+    "Id": "3dee1176-b072-8102-8491-f52947f16457",
+    "Task": "Heaps and priority queues + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-10-21",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Heaps-and-priority-queues-25-PYQs-3dee1176b07281028491f52947f16457"
+  },
+  {
+    "Id": "3dee1176-b072-81f5-9dfe-d8b84a744dc1",
+    "Task": "Elementary sorting and searching + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-10-22",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Elementary-sorting-and-searching-25-PYQs-3dee1176b07281f59dfed8b84a744dc1"
+  },
+  {
+    "Id": "3dee1176-b072-814b-839b-cbec60400869",
+    "Task": "Merge sort, quicksort, heapsort + 30 PYQs",
+    "Day": "Friday",
+    "Date": "2026-10-23",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Merge-sort-quicksort-heapsort-30-PYQs-3dee1176b072814b839bcbec60400869"
+  },
+  {
+    "Id": "3dee1176-b072-81b0-b8cd-e9f1f0218102",
+    "Task": "Weekly trees/sorting revision + 40–60 mixed questions",
+    "Day": "Saturday",
+    "Date": "2026-10-24",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Weekly-trees-sorting-revision-40-60-mixed-questions-3dee1176b07281b0b8cde9f1f0218102"
+  },
+  {
+    "Id": "3dee1176-b072-818a-9d28-e0c7037e220b",
+    "Task": "6h: revision + 50 PYQs + sectional test + analysis",
+    "Day": "Sunday",
+    "Date": "2026-10-25",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-revision-50-PYQs-sectional-test-analysis-3dee1176b072818a9d28e0c7037e220b"
+  },
+  {
+    "Id": "3dee1176-b072-81a5-a3d7-daf2cf37229b",
+    "Task": "Graph representations + BFS/DFS + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-10-26",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Graph-representations-BFS-DFS-25-PYQs-3dee1176b07281a5a3d7daf2cf37229b"
+  },
+  {
+    "Id": "3dee1176-b072-812f-b227-e6f0cefe6818",
+    "Task": "Shortest paths: Dijkstra/Bellman-Ford + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-10-27",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Shortest-paths-Dijkstra-Bellman-Ford-25-PYQs-3dee1176b072812fb227e6f0cefe6818"
+  },
+  {
+    "Id": "3dee1176-b072-81b3-84bc-fbc249c0623c",
+    "Task": "Greedy algorithms + MST (Prim/Kruskal) + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-10-28",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Greedy-algorithms-MST-Prim-Kruskal-25-PYQs-3dee1176b07281b384bcfbc249c0623c"
+  },
+  {
+    "Id": "3dee1176-b072-81e3-837d-e2c33a44da25",
+    "Task": "Divide and conquer + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-10-29",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Divide-and-conquer-25-PYQs-3dee1176b07281e3837de2c33a44da25"
+  },
+  {
+    "Id": "3dee1176-b072-811a-9649-eea10f7b166d",
+    "Task": "Dynamic programming: patterns and classic problems + 30 PYQs",
+    "Day": "Friday",
+    "Date": "2026-10-30",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Dynamic-programming-patterns-and-classic-problems-30-PYQs-3dee1176b072811a9649eea10f7b166d"
+  },
+  {
+    "Id": "3dee1176-b072-81f7-87ab-d46546817769",
+    "Task": "Weekly algorithms revision + 40–60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-10-31",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Weekly-algorithms-revision-40-60-mixed-PYQs-3dee1176b07281f787abd46546817769"
+  },
+  {
+    "Id": "3dee1176-b072-81d6-b2d2-c2d629c123a6",
+    "Task": "6h: DS/Algo mock + deep analysis + weak-topic list",
+    "Day": "Sunday",
+    "Date": "2026-11-01",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-DS-Algo-mock-deep-analysis-weak-topic-list-3dee1176b07281d6b2d2c2d629c123a6"
+  },
+  {
+    "Id": "3dee1176-b072-81a8-a376-e8923cd46503",
+    "Task": "Mixed arrays/lists/stacks/queues + 50 timed PYQs",
+    "Day": "Monday",
+    "Date": "2026-11-02",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Mixed-arrays-lists-stacks-queues-50-timed-PYQs-3dee1176b07281a8a376e8923cd46503"
+  },
+  {
+    "Id": "3dee1176-b072-81ce-b883-e198f4011c17",
+    "Task": "Trees/BST/heaps/hashing + 50 timed PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-11-03",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Trees-BST-heaps-hashing-50-timed-PYQs-3dee1176b07281ceb883e198f4011c17"
+  },
+  {
+    "Id": "3dee1176-b072-813a-a8ba-ca5c1b2385e6",
+    "Task": "Sorting/searching + 50 timed PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-11-04",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Sorting-searching-50-timed-PYQs-3dee1176b072813aa8baca5c1b2385e6"
+  },
+  {
+    "Id": "3dee1176-b072-81d4-ba29-c1c3bc38b655",
+    "Task": "Graphs + 50 timed PYQs",
+    "Day": "Thursday",
+    "Date": "2026-11-05",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Graphs-50-timed-PYQs-3dee1176b07281d4ba29c1c3bc38b655"
+  },
+  {
+    "Id": "3dee1176-b072-8181-950d-e3f0d838ea31",
+    "Task": "DP/greedy/divide-conquer timed set + error-log repair",
+    "Day": "Friday",
+    "Date": "2026-11-06",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DP-greedy-divide-conquer-timed-set-error-log-repair-3dee1176b0728181950de3f0d838ea31"
+  },
+  {
+    "Id": "3dee1176-b072-8132-a7ba-e72162d5116b",
+    "Task": "Full DS/Algo revision + 60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-11-07",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Full-DS-Algo-revision-60-mixed-PYQs-3dee1176b0728132a7bae72162d5116b"
+  },
+  {
+    "Id": "3dee1176-b072-8175-ad77-c8fb94690ae6",
+    "Task": "6h: Mock 2 + deep analysis + revise top 10 weak areas",
+    "Day": "Sunday",
+    "Date": "2026-11-08",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-Mock-2-deep-analysis-revise-top-10-weak-areas-3dee1176b0728175ad77c8fb94690ae6"
+  },
+  {
+    "Id": "3dee1176-b072-8162-9569-fdb630283dd3",
+    "Task": "DBMS ER model, keys, constraints + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-11-09",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DBMS-ER-model-keys-constraints-25-PYQs-3dee1176b07281629569fdb630283dd3"
+  },
+  {
+    "Id": "3dee1176-b072-8156-9c18-eb8328e21b59",
+    "Task": "Relational model + relational algebra + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-11-10",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Relational-model-relational-algebra-25-PYQs-3dee1176b07281569c18eb8328e21b59"
+  },
+  {
+    "Id": "3dee1176-b072-8142-8667-d0b5d661c88b",
+    "Task": "SQL: joins, subqueries, aggregation + 30 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-11-11",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/SQL-joins-subqueries-aggregation-30-PYQs-3dee1176b07281428667d0b5d661c88b"
+  },
+  {
+    "Id": "3dee1176-b072-81f0-9434-cc17685b1875",
+    "Task": "Functional dependencies and closure + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-11-12",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Functional-dependencies-and-closure-25-PYQs-3dee1176b07281f09434cc17685b1875"
+  },
+  {
+    "Id": "3dee1176-b072-8156-ba0d-e461c8951b3e",
+    "Task": "Normalization: 1NF–BCNF + 30 PYQs",
+    "Day": "Friday",
+    "Date": "2026-11-13",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Normalization-1NF-BCNF-30-PYQs-3dee1176b0728156ba0de461c8951b3e"
+  },
+  {
+    "Id": "3dee1176-b072-815e-9b4b-c7278570aa43",
+    "Task": "Weekly DBMS revision + 40–60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-11-14",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Weekly-DBMS-revision-40-60-mixed-PYQs-3dee1176b072815e9b4bc7278570aa43"
+  },
+  {
+    "Id": "3dee1176-b072-814f-ac73-cdee9697f79d",
+    "Task": "6h: DBMS sectional test + analysis + error log",
+    "Day": "Sunday",
+    "Date": "2026-11-15",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-DBMS-sectional-test-analysis-error-log-3dee1176b072814fac73cdee9697f79d"
+  },
+  {
+    "Id": "3dee1176-b072-812a-ae8e-f7a9767ce4de",
+    "Task": "OS processes, threads, states, PCB + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-11-16",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/OS-processes-threads-states-PCB-25-PYQs-3dee1176b072812aae8ef7a9767ce4de"
+  },
+  {
+    "Id": "3dee1176-b072-812e-892a-c3e8f646370a",
+    "Task": "CPU scheduling algorithms + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-11-17",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CPU-scheduling-algorithms-25-PYQs-3dee1176b072812e892ac3e8f646370a"
+  },
+  {
+    "Id": "3dee1176-b072-81b0-92b0-ed400cbf654c",
+    "Task": "Synchronization, semaphores, monitors + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-11-18",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Synchronization-semaphores-monitors-25-PYQs-3dee1176b07281b092b0ed400cbf654c"
+  },
+  {
+    "Id": "3dee1176-b072-817a-8421-f0566a0260a0",
+    "Task": "Deadlocks: detection, prevention, avoidance + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-11-19",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Deadlocks-detection-prevention-avoidance-25-PYQs-3dee1176b072817a8421f0566a0260a0"
+  },
+  {
+    "Id": "3dee1176-b072-817e-b291-cb7553fd175a",
+    "Task": "DBMS transactions, serializability, locking + 30 PYQs",
+    "Day": "Friday",
+    "Date": "2026-11-20",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DBMS-transactions-serializability-locking-30-PYQs-3dee1176b072817eb291cb7553fd175a"
+  },
+  {
+    "Id": "3dee1176-b072-814c-9f03-c024632acc36",
+    "Task": "OS + DBMS weekly revision + 50 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-11-21",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/OS-DBMS-weekly-revision-50-mixed-PYQs-3dee1176b072814c9f03c024632acc36"
+  },
+  {
+    "Id": "3dee1176-b072-81a1-b453-c3eeaa1c555c",
+    "Task": "6h: OS/DBMS mock + deep analysis",
+    "Day": "Sunday",
+    "Date": "2026-11-22",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-OS-DBMS-mock-deep-analysis-3dee1176b07281a1b453c3eeaa1c555c"
+  },
+  {
+    "Id": "3dee1176-b072-8110-8b91-cc98a3abd421",
+    "Task": "OS memory management, paging, segmentation + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-11-23",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/OS-memory-management-paging-segmentation-25-PYQs-3dee1176b07281108b91cc98a3abd421"
+  },
+  {
+    "Id": "3dee1176-b072-8100-a04a-e12815088c72",
+    "Task": "Virtual memory and page replacement + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-11-24",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Virtual-memory-and-page-replacement-25-PYQs-3dee1176b0728100a04ae12815088c72"
+  },
+  {
+    "Id": "3dee1176-b072-81e8-a371-d68f88366f74",
+    "Task": "File systems, allocation, directories + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-11-25",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/File-systems-allocation-directories-25-PYQs-3dee1176b07281e8a371d68f88366f74"
+  },
+  {
+    "Id": "3dee1176-b072-813b-8e8f-e8a43053fef6",
+    "Task": "DBMS indexing, B/B+ trees, hashing + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-11-26",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DBMS-indexing-B-B-trees-hashing-25-PYQs-3dee1176b072813b8e8fe8a43053fef6"
+  },
+  {
+    "Id": "3dee1176-b072-81b3-b7a3-ceda283960db",
+    "Task": "DBMS recovery + full DBMS revision + 30 PYQs",
+    "Day": "Friday",
+    "Date": "2026-11-27",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DBMS-recovery-full-DBMS-revision-30-PYQs-3dee1176b07281b3b7a3ceda283960db"
+  },
+  {
+    "Id": "3dee1176-b072-81b4-bf94-c00f39d366ea",
+    "Task": "OS + DBMS mixed revision + 50 PYQs",
+    "Day": "Saturday",
+    "Date": "2026-11-28",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/OS-DBMS-mixed-revision-50-PYQs-3dee1176b07281b4bf94c00f39d366ea"
+  },
+  {
+    "Id": "3dee1176-b072-81e7-847a-cdfa423c8d19",
+    "Task": "6h: sectional mock + analysis + error-log repair",
+    "Day": "Sunday",
+    "Date": "2026-11-29",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-sectional-mock-analysis-error-log-repair-3dee1176b07281e7847acdfa423c8d19"
+  },
+  {
+    "Id": "3dee1176-b072-812c-9bb6-f5dce2895300",
+    "Task": "OS+DBMS mixed timed PYQs + 50 questions",
+    "Day": "Monday",
+    "Date": "2026-11-30",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/OS-DBMS-mixed-timed-PYQs-50-questions-3dee1176b072812c9bb6f5dce2895300"
+  },
+  {
+    "Id": "3dee1176-b072-8119-9066-de84826f8665",
+    "Task": "Scheduling, synchronization, deadlock timed drill + 40 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-12-01",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Scheduling-synchronization-deadlock-timed-drill-40-PYQs-3dee1176b07281199066de84826f8665"
+  },
+  {
+    "Id": "3dee1176-b072-8173-92a5-d969b830bb45",
+    "Task": "SQL, functional dependencies, normalization + 40 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-12-02",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/SQL-functional-dependencies-normalization-40-PYQs-3dee1176b072817392a5d969b830bb45"
+  },
+  {
+    "Id": "3dee1176-b072-818d-a2f6-d1533cbe0727",
+    "Task": "Memory management + file systems timed drill + 40 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-12-03",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Memory-management-file-systems-timed-drill-40-PYQs-3dee1176b072818da2f6d1533cbe0727"
+  },
+  {
+    "Id": "3dee1176-b072-81e0-9e8f-fa2310c82b98",
+    "Task": "Full OS+DBMS sectional drill + error-log repair",
+    "Day": "Friday",
+    "Date": "2026-12-04",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Full-OS-DBMS-sectional-drill-error-log-repair-3dee1176b07281e09e8ffa2310c82b98"
+  },
+  {
+    "Id": "3dee1176-b072-8174-ba4e-c46ec539b1d1",
+    "Task": "Full OS+DBMS revision + 60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-12-05",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Full-OS-DBMS-revision-60-mixed-PYQs-3dee1176b0728174ba4ec46ec539b1d1"
+  },
+  {
+    "Id": "3dee1176-b072-8147-b552-e91d614167c4",
+    "Task": "6h: Mock 3 + deep analysis + weak-topic list",
+    "Day": "Sunday",
+    "Date": "2026-12-06",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-Mock-3-deep-analysis-weak-topic-list-3dee1176b0728147b552e91d614167c4"
+  },
+  {
+    "Id": "3dee1176-b072-81e7-98c2-d41f6cacad4e",
+    "Task": "CN OSI/TCP-IP, encapsulation + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-12-07",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-OSI-TCP-IP-encapsulation-25-PYQs-3dee1176b07281e798c2d41f6cacad4e"
+  },
+  {
+    "Id": "3dee1176-b072-816d-bc9f-d1216d021209",
+    "Task": "Data link, Ethernet, framing, error detection + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-12-08",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Data-link-Ethernet-framing-error-detection-25-PYQs-3dee1176b072816dbc9fd1216d021209"
+  },
+  {
+    "Id": "3dee1176-b072-8122-a242-d9f56801d932",
+    "Task": "IPv4, subnetting, CIDR + 30 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-12-09",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/IPv4-subnetting-CIDR-30-PYQs-3dee1176b0728122a242d9f56801d932"
+  },
+  {
+    "Id": "3dee1176-b072-8113-9546-d29e6dbd237d",
+    "Task": "Routing algorithms and routing tables + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-12-10",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Routing-algorithms-and-routing-tables-25-PYQs-3dee1176b07281139546d29e6dbd237d"
+  },
+  {
+    "Id": "3dee1176-b072-81cf-be56-e8f0f3166dd5",
+    "Task": "COA number systems, signed arithmetic, representation + 25 PYQs",
+    "Day": "Friday",
+    "Date": "2026-12-11",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/COA-number-systems-signed-arithmetic-representation-25-PYQs-3dee1176b07281cfbe56e8f0f3166dd5"
+  },
+  {
+    "Id": "3dee1176-b072-8164-97cc-f698b1ee30d0",
+    "Task": "CN + COA weekly revision + 50 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-12-12",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-COA-weekly-revision-50-mixed-PYQs-3dee1176b072816497ccf698b1ee30d0"
+  },
+  {
+    "Id": "3dee1176-b072-8190-88a1-c6796adf5e46",
+    "Task": "6h: CN/COA sectional tests + analysis",
+    "Day": "Sunday",
+    "Date": "2026-12-13",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-CN-COA-sectional-tests-analysis-3dee1176b072819088a1c6796adf5e46"
+  },
+  {
+    "Id": "3dee1176-b072-81f2-b7b7-e97fceca9a53",
+    "Task": "TCP/UDP, ports, sockets + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-12-14",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/TCP-UDP-ports-sockets-25-PYQs-3dee1176b07281f2b7b7e97fceca9a53"
+  },
+  {
+    "Id": "3dee1176-b072-817f-acdc-e033e7598967",
+    "Task": "Flow and congestion control + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-12-15",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Flow-and-congestion-control-25-PYQs-3dee1176b072817facdce033e7598967"
+  },
+  {
+    "Id": "3dee1176-b072-812f-a510-d0fd1b727816",
+    "Task": "DNS, HTTP, email, DHCP + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-12-16",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/DNS-HTTP-email-DHCP-25-PYQs-3dee1176b072812fa510d0fd1b727816"
+  },
+  {
+    "Id": "3dee1176-b072-8110-a504-e00986d98eeb",
+    "Task": "ISA, instruction formats, addressing modes + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-12-17",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/ISA-instruction-formats-addressing-modes-25-PYQs-3dee1176b0728110a504e00986d98eeb"
+  },
+  {
+    "Id": "3dee1176-b072-8164-aac5-fb2aa2fed3bc",
+    "Task": "Datapath, control unit, instruction execution + 25 PYQs",
+    "Day": "Friday",
+    "Date": "2026-12-18",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Datapath-control-unit-instruction-execution-25-PYQs-3dee1176b0728164aac5fb2aa2fed3bc"
+  },
+  {
+    "Id": "3dee1176-b072-8127-8310-e8eba1eccfe7",
+    "Task": "CN + COA revision + 50 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-12-19",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-COA-revision-50-mixed-PYQs-3dee1176b07281278310e8eba1eccfe7"
+  },
+  {
+    "Id": "3dee1176-b072-8159-8e2e-fbd2a38aac8e",
+    "Task": "6h: sectional mock + analysis + error log",
+    "Day": "Sunday",
+    "Date": "2026-12-20",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-sectional-mock-analysis-error-log-3dee1176b07281598e2efbd2a38aac8e"
+  },
+  {
+    "Id": "3dee1176-b072-81cd-bb9d-eaeae8f91d06",
+    "Task": "Pipelining, hazards, speedup + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2026-12-21",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Pipelining-hazards-speedup-25-PYQs-3dee1176b07281cdbb9deaeae8f91d06"
+  },
+  {
+    "Id": "3dee1176-b072-8186-9776-eb125951119c",
+    "Task": "Cache mapping, hit/miss, AMAT + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-12-22",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Cache-mapping-hit-miss-AMAT-25-PYQs-3dee1176b07281869776eb125951119c"
+  },
+  {
+    "Id": "3dee1176-b072-8175-a905-c424c9759b91",
+    "Task": "Memory hierarchy + virtual memory + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-12-23",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Memory-hierarchy-virtual-memory-25-PYQs-3dee1176b0728175a905c424c9759b91"
+  },
+  {
+    "Id": "3dee1176-b072-819a-a16a-c44440efe15d",
+    "Task": "CN IP/routing/TCP revision + 30 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-12-24",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-IP-routing-TCP-revision-30-PYQs-3dee1176b072819aa16ac44440efe15d"
+  },
+  {
+    "Id": "3dee1176-b072-8127-97f4-f22bc155d22d",
+    "Task": "COA I/O, interrupts, DMA + 25 PYQs",
+    "Day": "Friday",
+    "Date": "2026-12-25",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/COA-I-O-interrupts-DMA-25-PYQs-3dee1176b072812797f4f22bc155d22d"
+  },
+  {
+    "Id": "3dee1176-b072-8135-8c4b-fda6401de3e7",
+    "Task": "CN + COA weekly revision + 60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2026-12-26",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-COA-weekly-revision-60-mixed-PYQs-3dee1176b07281358c4bfda6401de3e7"
+  },
+  {
+    "Id": "3dee1176-b072-81a4-ada7-cfe75500cf16",
+    "Task": "6h: CN/COA mock + deep analysis",
+    "Day": "Sunday",
+    "Date": "2026-12-27",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-CN-COA-mock-deep-analysis-3dee1176b07281a4ada7cfe75500cf16"
+  },
+  {
+    "Id": "3dee1176-b072-81c1-937c-e45d29e14fb6",
+    "Task": "CN subnetting/routing numericals + 40 timed PYQs",
+    "Day": "Monday",
+    "Date": "2026-12-28",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-subnetting-routing-numericals-40-timed-PYQs-3dee1176b07281c1937ce45d29e14fb6"
+  },
+  {
+    "Id": "3dee1176-b072-817e-a243-f0f4265eea36",
+    "Task": "COA cache/pipeline numericals + 40 timed PYQs",
+    "Day": "Tuesday",
+    "Date": "2026-12-29",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/COA-cache-pipeline-numericals-40-timed-PYQs-3dee1176b072817ea243f0f4265eea36"
+  },
+  {
+    "Id": "3dee1176-b072-811b-a105-ebd7c2f7ffee",
+    "Task": "CN full protocol revision + 40 PYQs",
+    "Day": "Wednesday",
+    "Date": "2026-12-30",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-full-protocol-revision-40-PYQs-3dee1176b072811ba105ebd7c2f7ffee"
+  },
+  {
+    "Id": "3dee1176-b072-811b-b64a-f6ea718bb2e2",
+    "Task": "COA full architecture revision + 40 PYQs",
+    "Day": "Thursday",
+    "Date": "2026-12-31",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/COA-full-architecture-revision-40-PYQs-3dee1176b072811bb64af6ea718bb2e2"
+  },
+  {
+    "Id": "3dee1176-b072-81a0-8bb8-fb5e6b3d679f",
+    "Task": "CN+COA timed mixed set + error-log repair",
+    "Day": "Friday",
+    "Date": "2027-01-01",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CN-COA-timed-mixed-set-error-log-repair-3dee1176b07281a08bb8fb5e6b3d679f"
+  },
+  {
+    "Id": "3dee1176-b072-81a1-9a3b-cc1d79da1b20",
+    "Task": "Full CN+COA revision + 60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2027-01-02",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Full-CN-COA-revision-60-mixed-PYQs-3dee1176b07281a19a3bcc1d79da1b20"
+  },
+  {
+    "Id": "3dee1176-b072-81eb-8cf2-c8eb362a4efa",
+    "Task": "6h: Mock 4 + deep analysis + weak-topic list",
+    "Day": "Sunday",
+    "Date": "2027-01-03",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-Mock-4-deep-analysis-weak-topic-list-3dee1176b07281eb8cf2c8eb362a4efa"
+  },
+  {
+    "Id": "3dee1176-b072-8120-ad18-dc1c69698ae4",
+    "Task": "TOC regular languages, DFA/NFA, regex + 25 PYQs",
+    "Day": "Monday",
+    "Date": "2027-01-04",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/TOC-regular-languages-DFA-NFA-regex-25-PYQs-3dee1176b0728120ad18dc1c69698ae4"
+  },
+  {
+    "Id": "3dee1176-b072-81c6-a133-e6db7080451e",
+    "Task": "CFG, derivations, ambiguity, CNF + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2027-01-05",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/CFG-derivations-ambiguity-CNF-25-PYQs-3dee1176b07281c6a133e6db7080451e"
+  },
+  {
+    "Id": "3dee1176-b072-81d6-a23a-db33c16a0fc0",
+    "Task": "PDA and context-free languages + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2027-01-06",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/PDA-and-context-free-languages-25-PYQs-3dee1176b07281d6a23adb33c16a0fc0"
+  },
+  {
+    "Id": "3dee1176-b072-810d-b12e-e29886f1d4f4",
+    "Task": "Turing machines, decidability, reducibility + 25 PYQs",
+    "Day": "Thursday",
+    "Date": "2027-01-07",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Turing-machines-decidability-reducibility-25-PYQs-3dee1176b072810db12ee29886f1d4f4"
+  },
+  {
+    "Id": "3dee1176-b072-819d-a779-f929d9448a93",
+    "Task": "Compiler lexical analysis + 25 PYQs",
+    "Day": "Friday",
+    "Date": "2027-01-08",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Compiler-lexical-analysis-25-PYQs-3dee1176b072819da779f929d9448a93"
+  },
+  {
+    "Id": "3dee1176-b072-81f7-aa7e-eeef4348a1f2",
+    "Task": "TOC + Compiler weekly revision + 50 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2027-01-09",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/TOC-Compiler-weekly-revision-50-mixed-PYQs-3dee1176b07281f7aa7eeeef4348a1f2"
+  },
+  {
+    "Id": "3dee1176-b072-8103-8b27-d63a18e7e9b6",
+    "Task": "6h: TOC/Compiler sectional tests + analysis",
+    "Day": "Sunday",
+    "Date": "2027-01-10",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-TOC-Compiler-sectional-tests-analysis-3dee1176b07281038b27d63a18e7e9b6"
+  },
+  {
+    "Id": "3dee1176-b072-8119-ba98-d7be18ad9154",
+    "Task": "Compiler parsing: LL/LR + 30 PYQs",
+    "Day": "Monday",
+    "Date": "2027-01-11",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Compiler-parsing-LL-LR-30-PYQs-3dee1176b0728119ba98d7be18ad9154"
+  },
+  {
+    "Id": "3dee1176-b072-8132-a4b1-e24c10676f9d",
+    "Task": "Syntax-directed translation + intermediate code + 25 PYQs",
+    "Day": "Tuesday",
+    "Date": "2027-01-12",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Syntax-directed-translation-intermediate-code-25-PYQs-3dee1176b0728132a4b1e24c10676f9d"
+  },
+  {
+    "Id": "3dee1176-b072-81fc-8c95-d6c59201d7ae",
+    "Task": "Runtime environments + code generation + 25 PYQs",
+    "Day": "Wednesday",
+    "Date": "2027-01-13",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Runtime-environments-code-generation-25-PYQs-3dee1176b07281fc8c95d6c59201d7ae"
+  },
+  {
+    "Id": "3dee1176-b072-8126-a9a5-f46e17069f23",
+    "Task": "Digital Logic: Boolean algebra, K-maps, combinational circuits + 30 PYQs",
+    "Day": "Thursday",
+    "Date": "2027-01-14",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Digital-Logic-Boolean-algebra-K-maps-combinational-circuits-30-PYQs-3dee1176b0728126a9a5f46e17069f23"
+  },
+  {
+    "Id": "3dee1176-b072-81e6-b012-e43446bbe2d2",
+    "Task": "Digital Logic: sequential circuits, FSMs, flip-flops + 30 PYQs",
+    "Day": "Friday",
+    "Date": "2027-01-15",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Digital-Logic-sequential-circuits-FSMs-flip-flops-30-PYQs-3dee1176b07281e6b012e43446bbe2d2"
+  },
+  {
+    "Id": "3dee1176-b072-8187-a94b-e2601a525311",
+    "Task": "Compiler + Digital Logic revision + 50 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2027-01-16",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Compiler-Digital-Logic-revision-50-mixed-PYQs-3dee1176b0728187a94be2601a525311"
+  },
+  {
+    "Id": "3dee1176-b072-81f8-8bf8-e80bca13aae2",
+    "Task": "6h: Compiler/Digital sectional tests + analysis",
+    "Day": "Sunday",
+    "Date": "2027-01-17",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-Compiler-Digital-sectional-tests-analysis-3dee1176b07281f88bf8e80bca13aae2"
+  },
+  {
+    "Id": "3dee1176-b072-8145-b824-e8bafcd5848c",
+    "Task": "TOC full revision + 30 PYQs + error log",
+    "Day": "Monday",
+    "Date": "2027-01-18",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/TOC-full-revision-30-PYQs-error-log-3dee1176b0728145b824e8bafcd5848c"
+  },
+  {
+    "Id": "3dee1176-b072-8108-ae3b-e7f6f5fdaaeb",
+    "Task": "Compiler full revision + 30 PYQs + error log",
+    "Day": "Tuesday",
+    "Date": "2027-01-19",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Compiler-full-revision-30-PYQs-error-log-3dee1176b0728108ae3be7f6f5fdaaeb"
+  },
+  {
+    "Id": "3dee1176-b072-81c8-985b-cb967728c600",
+    "Task": "Digital Logic full revision + 30 PYQs + error log",
+    "Day": "Wednesday",
+    "Date": "2027-01-20",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Digital-Logic-full-revision-30-PYQs-error-log-3dee1176b07281c8985bcb967728c600"
+  },
+  {
+    "Id": "3dee1176-b072-8197-8c12-e37d63011098",
+    "Task": "TOC+Compiler timed mixed PYQs + error-log repair",
+    "Day": "Thursday",
+    "Date": "2027-01-21",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/TOC-Compiler-timed-mixed-PYQs-error-log-repair-3dee1176b07281978c12e37d63011098"
+  },
+  {
+    "Id": "3dee1176-b072-81ea-b608-d9c8b0234f25",
+    "Task": "Digital+TOC timed mixed PYQs + error-log repair",
+    "Day": "Friday",
+    "Date": "2027-01-22",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Digital-TOC-timed-mixed-PYQs-error-log-repair-3dee1176b07281eab608d9c8b0234f25"
+  },
+  {
+    "Id": "3dee1176-b072-8105-99ef-db05fd10a636",
+    "Task": "Full Phase 5 revision + 60 mixed PYQs",
+    "Day": "Saturday",
+    "Date": "2027-01-23",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Full-Phase-5-revision-60-mixed-PYQs-3dee1176b072810599efdb05fd10a636"
+  },
+  {
+    "Id": "3dee1176-b072-81a1-8d29-fec8aabcb370",
+    "Task": "6h: Mock 5 + deep analysis + final weak-topic list",
+    "Day": "Sunday",
+    "Date": "2027-01-24",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/6h-Mock-5-deep-analysis-final-weak-topic-list-3dee1176b07281a18d29fec8aabcb370"
+  },
+  {
+    "Id": "3dee1176-b072-8191-88fd-dfce59592a3d",
+    "Task": "Engineering Math: linear algebra + 30 PYQs",
+    "Day": "Monday",
+    "Date": "2027-01-25",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Engineering-Math-linear-algebra-30-PYQs-3dee1176b072819188fddfce59592a3d"
+  },
+  {
+    "Id": "3dee1176-b072-8103-bef0-c5d9be737b47",
+    "Task": "Engineering Math: calculus + 30 PYQs",
+    "Day": "Tuesday",
+    "Date": "2027-01-26",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Engineering-Math-calculus-30-PYQs-3dee1176b0728103bef0c5d9be737b47"
+  },
+  {
+    "Id": "3dee1176-b072-8146-8af3-e67fbf96f0d8",
+    "Task": "Engineering Math: probability/statistics + 30 PYQs",
+    "Day": "Wednesday",
+    "Date": "2027-01-27",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/Engineering-Math-probability-statistics-30-PYQs-3dee1176b07281468af3e67fbf96f0d8"
+  },
+  {
+    "Id": "3dee1176-b072-8164-9dc8-cc45d08a517c",
+    "Task": "General Aptitude: verbal + quantitative + 30 PYQs",
+    "Day": "Thursday",
+    "Date": "2027-01-28",
+    "Status": "Not started",
+    "Note": "",
+    "Url": "https://app.notion.com/p/General-Aptitude-verbal-quantitative-30-PYQs-3dee1176b07281649dc8cc45d08a517c"
+  }
+]

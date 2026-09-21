@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GATE AI Trainer</title>
+  <style>
+    body { width: 340px; margin: 0; background: #0f172a; color: #e2e8f0; font: 13px system-ui, sans-serif; }
+    header { padding: 12px 14px; background: #1e293b; font-weight: 700; color: #a5b4fc; }
+    main { padding: 12px 14px; }
+    .row { margin-bottom: 10px; }
+    button { width: 100%; padding: 8px; border: 0; border-radius: 8px; cursor: pointer; font-weight: 600; }
+    .primary { background: #6366f1; color: #fff; }
+    button:disabled { opacity: .5; cursor: default; }
+    .status { color: #94a3b8; margin-bottom: 10px; font-size: 12px; }
+    .mcq { border: 1px solid #334155; border-radius: 8px; padding: 8px; margin-bottom: 8px; background: #1e293b; }
+    .mcq .q { color: #e2e8f0; }
+    .mcq .meta { color: #64748b; font-size: 11px; margin-top: 4px; }
+    .tag { display: inline-block; padding: 1px 6px; border-radius: 999px; font-size: 10px; margin-right: 4px; }
+    .weak { background: #ef444433; color: #fca5a5; }
+    .med { background: #f59e0b33; color: #fcd34d; }
+    .strong { background: #10b98133; color: #6ee7b7; }
+    a { color: #818cf8; }
+    .mini { margin-top: 8px; font-size: 12px; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <header>🤖 GATE 2027 · AI Trainer</header>
+  <main>
+    <div id="status" class="status">Loading…</div>
+    <div class="row"><button id="btn-latest" class="primary">⚡ Latest MCQs (my weakest subject)</button></div>
+    <div class="row"><button id="btn-quiz">🎯 Quick 5-question gut check</button></div>
+    <div id="results"></div>
+    <div class="mini">Tip: highlight any text on a page → “Ask GATE AI” or right-click → <b>Explain with GATE AI</b>.</div>
+    <div class="mini">Missing key/URL? <a href="options.html" target="_blank">Extension options</a> · <a href="#" id="link-app">Open trainer</a></div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

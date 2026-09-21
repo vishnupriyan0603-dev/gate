@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GATE 2027 AI Trainer",
+  "version": "1.0.0",
+  "description": "Adaptive AI MCQs + instant explanations based on your GATE study level, synced with your local trainer app.",
+  "permissions": ["storage", "contextMenus", "activeTab", "scripting"],
+  "host_permissions": ["http://localhost/*", "http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "GATE AI Trainer",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
