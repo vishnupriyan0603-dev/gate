@@ -55,7 +55,7 @@ jobs:
           DB_USER: ${{ secrets.DB_USER || 'if0_42957568' }}
           DB_NAME: ${{ secrets.DB_NAME || 'if0_42957568_gate' }}
           DB_HOST: ${{ secrets.DB_HOST || 'sql103.infinityfree.com' }}
-          APP_URL: ${{ secrets.APP_URL || 'http://gatexam27.free.nf/' }}
+          APP_URL: ${{ secrets.APP_URL || 'https://gatexam27.free.nf/' }}
         run: |
           if [ -n "$PRODUCTION_ENV" ]; then
             echo "$PRODUCTION_ENV" > main/.env

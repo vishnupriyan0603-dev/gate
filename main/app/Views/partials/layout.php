@@ -1,4 +1,13 @@
-<?php $imgUrl = rtrim(base_url(), '/'); ?>
+<?php
+$rawBase = rtrim(base_url(), '/');
+$isHttps = (
+    (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') ||
+    (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https') ||
+    (!empty($_SERVER['HTTP_X_FORWARDED_SSL']) && strtolower($_SERVER['HTTP_X_FORWARDED_SSL']) === 'on') ||
+    (isset($_SERVER['SERVER_PORT']) && (int)$_SERVER['SERVER_PORT'] === 443)
+);
+$imgUrl = $isHttps ? preg_replace('/^http:/i', 'https:', $rawBase) : $rawBase;
+?>
 <!DOCTYPE html>
 <html lang="en" data-theme="gate-dark">
 <head>
@@ -12,7 +21,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
   <?php $av = @filemtime(FCPATH . 'assets/app.css') ?: time(); $jv = @filemtime(FCPATH . 'assets/app.js') ?: time(); ?>
   <link rel="stylesheet" href="<?= $imgUrl ?>/assets/app.css?v=<?= $av ?>" fetchpriority="high">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" as="style">
   <?php
   $preloadMap = ['dashboard' => 'chunk-dashboard.js', 'course' => 'chunk-course.js', 'learn' => 'chunk-course.js', 'training' => 'chunk-training.js', 'challenge' => 'chunk-training.js', 'performance' => 'chunk-performance.js', 'documents' => 'chunk-documents.js', 'calendar' => 'chunk-calendar.js', 'settings' => 'chunk-settings.js', 'game' => 'chunk-game.js'];
   $preloadFile = $preloadMap[$page] ?? null;

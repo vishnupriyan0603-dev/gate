@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://gatexam27.free.nf/';
+    public string $baseURL = 'https://gatexam27.free.nf/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -199,4 +199,21 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Auto-detect HTTPS if behind reverse proxy or CDN
+        $isHttps = (
+            (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') ||
+            (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https') ||
+            (!empty($_SERVER['HTTP_X_FORWARDED_SSL']) && strtolower($_SERVER['HTTP_X_FORWARDED_SSL']) === 'on') ||
+            (isset($_SERVER['SERVER_PORT']) && (int)$_SERVER['SERVER_PORT'] === 443)
+        );
+
+        if ($isHttps && str_starts_with($this->baseURL, 'http://')) {
+            $this->baseURL = 'https://' . substr($this->baseURL, 7);
+        }
+    }
 }
