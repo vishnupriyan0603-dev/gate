@@ -1,0 +1,50 @@
+# Environment & Secrets (NEVER COMMIT)
+.env
+*.env
+main/.env
+main/*.env
+
+# Archives & Large Files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Dependencies
+vendor/
+main/vendor/
+node_modules/
+main/frontend/node_modules/
+
+# Writable & Logs
+writable/
+main/writable/cache/*
+!main/writable/cache/index.html
+main/writable/logs/*
+!main/writable/logs/index.html
+main/writable/session/*
+!main/writable/session/index.html
+main/writable/uploads/*
+!main/writable/uploads/index.html
+main/writable/debugbar/*
+!main/writable/debugbar/index.html
+*.log
+php_errors.log
+
+# Build & Test Caches
+build/
+main/build/
+.phpunit.cache/
+main/build/.phpunit.cache/
+
+# OS & IDE Junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
