@@ -51,7 +51,7 @@ jobs:
       - name: 🔐 Prepare Production .env
         env:
           PRODUCTION_ENV: ${{ secrets.PRODUCTION_ENV }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD || secrets.FTP_PASSWORD }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD || secrets.FTP_PASSWORD || '7I6lBin7Uxmy' }}
           DB_USER: ${{ secrets.DB_USER || 'if0_42957568' }}
           DB_NAME: ${{ secrets.DB_NAME || 'if0_42957568_gate' }}
           DB_HOST: ${{ secrets.DB_HOST || 'sql103.infinityfree.com' }}
@@ -115,7 +115,7 @@ jobs:
         with:
           server: ${{ secrets.FTP_SERVER || 'ftpupload.net' }}
           username: ${{ secrets.FTP_USERNAME || 'if0_42957568' }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_PASSWORD || '7I6lBin7Uxmy' }}
           port: ${{ secrets.FTP_PORT || 21 }}
           server-dir: ${{ secrets.FTP_SERVER_DIR || 'htdocs/' }}
           protocol: ftp
@@ -126,7 +126,6 @@ jobs:
             main/frontend/**
             main/tests/**
             main/build/**
-            main/db/*.sql
             .github/**
             README.md
             GEMINI.md

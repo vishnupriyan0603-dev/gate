@@ -1,5 +1,5 @@
-
 <?php
+
 
 namespace Config;
 
@@ -27,14 +27,14 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => env('database.default.hostname', 'sql103.infinityfree.com'),
-        'username'     => env('database.default.username', 'if0_42957568'),
-        'password'     => env('database.default.password', ''),
-        'database'     => env('database.default.database', 'if0_42957568_gate'),
+        'hostname'     => 'sql103.infinityfree.com',
+        'username'     => 'if0_42957568',
+        'password'     => '7I6lBin7Uxmy',
+        'database'     => 'if0_42957568_gate',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
-        'DBDebug'      => (bool) env('database.default.DBDebug', true),
+        'DBDebug'      => true,
         'charset'      => 'utf8mb4',
         'DBCollat'     => 'utf8mb4_general_ci',
         'swapPre'      => '',
@@ -194,6 +194,13 @@ class Database extends Config
     public function __construct()
     {
         parent::__construct();
+
+        if (function_exists('env')) {
+            if ($h = env('database.default.hostname')) $this->default['hostname'] = $h;
+            if ($u = env('database.default.username')) $this->default['username'] = $u;
+            if ($p = env('database.default.password')) $this->default['password'] = $p;
+            if ($d = env('database.default.database')) $this->default['database'] = $d;
+        }
 
         // Ensure that we always set the database group to 'tests' if
         // we are currently running an automated test suite, so that
