@@ -22,11 +22,11 @@
 
       <div class="mt-4 flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3" data-split>
-            <span class="p-2 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400">
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
+            <span class="p-2 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 shrink-0">
               <span data-lucide="book-open" class="w-6 h-6"></span>
             </span>
-            <?= esc($topic['name']) ?>
+            <span data-split class="inline-block"><?= esc($topic['name']) ?></span>
           </h1>
           <?php if ($topic['subject_name']): ?>
             <p class="mt-2 text-sm text-slate-400 flex items-center gap-2">

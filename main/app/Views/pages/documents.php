@@ -5,11 +5,11 @@
     <div id="particles-hero" data-particles aria-hidden="true"></div>
     <div class="relative z-10 flex flex-wrap items-center justify-between gap-4">
     <div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3" data-split>
-        <span class="p-2 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
+        <span class="p-2 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 shrink-0">
           <span data-lucide="folder-kanban" class="w-6 h-6"></span>
         </span>
-        <span>Document <span class="text-quest">Hub</span></span>
+        <span data-split class="inline-block">Document <span class="text-quest">Hub</span></span>
       </h1>
       <p class="mt-1 text-sm text-slate-400" data-quote>Curated syllabus PDFs, formulas, standard reference books and Notion databases.</p>
     </div>

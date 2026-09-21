@@ -505,3 +505,14 @@ body[data-page="course"] .quest-hero, body[data-page="learn"] .quest-hero { bord
   html { scroll-behavior: auto; }
   .quest-hero::before, .bg-aurora::before, #particles-hero { animation: none !important; display: none !important; }
 }
+
+/* Split-type animated typography - ensure inline-block flow and word grouping */
+.line, .word, .char {
+  display: inline-block !important;
+  vertical-align: top;
+  position: relative;
+}
+.word {
+  white-space: nowrap !important;
+}
+

@@ -41,6 +41,10 @@ $imgUrl = $isHttps ? preg_replace('/^http:/i', 'https:', $rawBase) : $rawBase;
     #boot-preloader .tip { font-size: .78rem; color: #94a3b8; }
     #boot-preloader .tip b { color: #c4b5fd; }
     @media (prefers-reduced-motion: reduce) { #boot-preloader .orb, #boot-preloader .ring > span { animation: none; } }
+
+    /* Split-Type typography preservation (prevent vertical character stacking) */
+    .line, .word, .char { display: inline-block !important; vertical-align: top; }
+    .word { white-space: nowrap !important; }
   </style>
   <noscript><style>#boot-preloader { display: none; }</style></noscript>
 </head>

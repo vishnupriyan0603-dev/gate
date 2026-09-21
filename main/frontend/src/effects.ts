@@ -447,9 +447,9 @@ async function initSplitTitles(): Promise<void> {
     const [{ default: SplitType }, { gsap }] = await Promise.all([import('split-type'), import('gsap')]);
     for (const h of heads) {
       h.dataset.splitDone = '1';
-      const split = new SplitType(h, { types: 'chars' }) as unknown as { chars?: HTMLElement[] };
+      const split = new SplitType(h, { types: 'words,chars', tagName: 'span' }) as unknown as { chars?: HTMLElement[]; words?: HTMLElement[] };
       if (split.chars && split.chars.length > 0) {
-        gsap.from(split.chars, { y: 18, opacity: 0, duration: 0.5, stagger: 0.02, ease: 'power3.out', delay: 0.1 });
+        gsap.from(split.chars, { y: 14, opacity: 0, duration: 0.4, stagger: 0.015, ease: 'power3.out', delay: 0.05 });
       }
     }
   } catch {

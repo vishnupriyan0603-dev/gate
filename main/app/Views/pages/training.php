@@ -4,11 +4,11 @@
   <aside class="space-y-4" data-reveal>
     <div class="quest-hero p-5" data-tilt>
       <div id="particles-hero" data-particles aria-hidden="true"></div>
-      <h1 class="text-2xl font-extrabold text-white tracking-tight flex items-center gap-2.5" data-split>
-        <span class="p-1.5 rounded-xl bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">
+      <h1 class="text-2xl font-extrabold text-white tracking-tight flex items-center gap-2.5">
+        <span class="p-1.5 rounded-xl bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 shrink-0">
           <span data-lucide="crosshair" class="w-5 h-5"></span>
         </span>
-        <span>Training <span class="text-quest">Arena</span></span>
+        <span data-split class="inline-block">Training <span class="text-quest">Arena</span></span>
       </h1>
       <p class="mt-2 text-xs text-slate-400 flex items-center gap-1.5">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
