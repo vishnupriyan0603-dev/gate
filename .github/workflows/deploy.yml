@@ -1,0 +1,92 @@
+name: Deploy to InfinityFree Live Server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🐘 Setup PHP 8.2
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, intl, mysqli, json, curl
+          tools: composer:v2
+
+      - name: 📦 Install Backend Dependencies (Composer)
+        run: |
+          cd main
+          composer install --no-dev --prefer-dist --optimize-autoloader --no-progress
+        env:
+          COMPOSER_ALLOW_SUPERUSER: 1
+
+      - name: ⬡ Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: main/frontend/package-lock.json
+
+      - name: 🎨 Build Frontend (Vite + Tailwind + TS)
+        run: |
+          cd main/frontend
+          npm ci
+          npm run build
+
+      - name: 🔐 Prepare Production .env
+        run: |
+          cat << 'EOF' > main/.env
+          CI_ENVIRONMENT = production
+          app.baseURL = 'http://gatexam27.free.nf/'
+          app.indexPage = ''
+          app.forceGlobalSecureRequests = false
+
+          database.default.hostname = sql103.infinityfree.com
+          database.default.database = if0_42957568_gate
+          database.default.username = if0_42957568
+          database.default.password = ${{ secrets.DB_PASSWORD || secrets.FTP_PASSWORD }}
+          database.default.DBDriver = MySQLi
+          database.default.DBPrefix =
+          database.default.port = 3306
+          database.default.charset = utf8mb4
+          database.default.DBCollat = utf8mb4_unicode_ci
+
+          session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
+          logger.threshold = 3
+          encryption.key = hex2bin:96946d529ba94185f8eff93510c58713c7fa6ef38b0880f9abc3e2018e1d9f1d
+          EOF
+          cp main/.env .env
+
+      - name: 🚀 Deploy to InfinityFree via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER || 'ftpupload.net' }}
+          username: ${{ secrets.FTP_USERNAME || 'if0_42957568' }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR || 'htdocs/' }}
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            main/frontend/**
+            main/tests/**
+            main/build/**
+            main/db/*.sql
+            .github/**
+            README.md
+            GEMINI.md
