@@ -47,17 +47,27 @@ jobs:
           npm run build
 
       - name: 🔐 Prepare Production .env
+        env:
+          PRODUCTION_ENV: ${{ secrets.PRODUCTION_ENV }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD || secrets.FTP_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER || 'if0_42957568' }}
+          DB_NAME: ${{ secrets.DB_NAME || 'if0_42957568_gate' }}
+          DB_HOST: ${{ secrets.DB_HOST || 'sql103.infinityfree.com' }}
+          APP_URL: ${{ secrets.APP_URL || 'http://gatexam27.free.nf/' }}
         run: |
-          cat << 'EOF' > main/.env
+          if [ -n "$PRODUCTION_ENV" ]; then
+            echo "$PRODUCTION_ENV" > main/.env
+          else
+            cat > main/.env << EOF
           CI_ENVIRONMENT = production
-          app.baseURL = 'http://gatexam27.free.nf/'
+          app.baseURL = '${APP_URL}'
           app.indexPage = ''
           app.forceGlobalSecureRequests = false
 
-          database.default.hostname = sql103.infinityfree.com
-          database.default.database = if0_42957568_gate
-          database.default.username = if0_42957568
-          database.default.password = ${{ secrets.DB_PASSWORD || secrets.FTP_PASSWORD }}
+          database.default.hostname = ${DB_HOST}
+          database.default.database = ${DB_NAME}
+          database.default.username = ${DB_USER}
+          database.default.password = "${DB_PASSWORD}"
           database.default.DBDriver = MySQLi
           database.default.DBPrefix =
           database.default.port = 3306
@@ -68,7 +78,15 @@ jobs:
           logger.threshold = 3
           encryption.key = hex2bin:96946d529ba94185f8eff93510c58713c7fa6ef38b0880f9abc3e2018e1d9f1d
           EOF
+          fi
+
+          # Ensure .env is available at both root and main/ directory
           cp main/.env .env
+
+          # Inject database password fallback in Database.php for hosting environments that block .env dotfiles
+          if [ -n "$DB_PASSWORD" ]; then
+            sed -i "s/'password' => env('database.default.password', '')/'password' => env('database.default.password', '$DB_PASSWORD')/g" main/app/Config/Database.php
+          fi
 
       - name: 🚀 Deploy to InfinityFree via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
