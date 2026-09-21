@@ -45,6 +45,8 @@ jobs:
           cd main/frontend
           npm ci
           npm run build
+          mkdir -p ../../assets
+          cp -r ../public/assets/* ../../assets/
 
       - name: 🔐 Prepare Production .env
         env:

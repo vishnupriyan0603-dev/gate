@@ -34,6 +34,7 @@ php_errors.log
 # Build & Test Caches
 build/
 main/build/
+main/public/assets/
 .phpunit.cache/
 main/build/.phpunit.cache/
 
