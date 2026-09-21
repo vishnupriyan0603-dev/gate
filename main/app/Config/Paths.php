@@ -26,9 +26,16 @@ class Paths
      * This must contain the name of your "system" folder. Include
      * the path if the folder is not in the same directory as this file.
      */
-    public string $systemDirectory = is_dir(__DIR__ . '/../../system')
-        ? __DIR__ . '/../../system'
-        : __DIR__ . '/../../vendor/codeigniter4/framework/system';
+    public string $systemDirectory = __DIR__ . '/../../system';
+
+    public function __construct()
+    {
+        if (is_dir(__DIR__ . '/../../system')) {
+            $this->systemDirectory = __DIR__ . '/../../system';
+        } else {
+            $this->systemDirectory = __DIR__ . '/../../vendor/codeigniter4/framework/system';
+        }
+    }
 
     /**
      * ---------------------------------------------------------------
