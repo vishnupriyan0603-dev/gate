@@ -61,7 +61,7 @@ jobs:
             echo "$PRODUCTION_ENV" > main/.env
           else
             cat > main/.env << EOF
-          CI_ENVIRONMENT = production
+          CI_ENVIRONMENT = development
           app.baseURL = '${APP_URL}'
           app.indexPage = ''
           app.forceGlobalSecureRequests = false
@@ -75,9 +75,10 @@ jobs:
           database.default.port = 3306
           database.default.charset = utf8mb4
           database.default.DBCollat = utf8mb4_unicode_ci
+          database.default.DBDebug = true
 
           session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
-          logger.threshold = 3
+          logger.threshold = 4
           encryption.key = hex2bin:96946d529ba94185f8eff93510c58713c7fa6ef38b0880f9abc3e2018e1d9f1d
           EOF
           fi
@@ -85,10 +86,23 @@ jobs:
           # Ensure .env is available at both root and main/ directory
           cp main/.env .env
 
-          # Inject database password fallback in Database.php for hosting environments that block .env dotfiles
-          if [ -n "$DB_PASSWORD" ]; then
-            sed -i "s/'password' => env('database.default.password', '')/'password' => env('database.default.password', '$DB_PASSWORD')/g" main/app/Config/Database.php
-          fi
+          # Inject database password fallback in Database.php for environments where .env is blocked
+          php -r '
+            $pass = getenv("DB_PASSWORD");
+            if (!empty($pass)) {
+              $file = "main/app/Config/Database.php";
+              $content = file_get_contents($file);
+              $content = preg_replace_callback(
+                "/\x27password\x27\s*=>\s*env\(\x27database\.default\.password\x27,\s*\x27[^\x27]*\x27\)/",
+                function() use ($pass) {
+                  return "\x27password\x27     => env(\x27database.default.password\x27, \x27" . addcslashes($pass, "\x27\\\\") . "\x27)";
+                },
+                $content
+              );
+              file_put_contents($file, $content);
+              echo "Injected database password into Database.php\n";
+            }
+          '
 
       - name: 📁 Ensure Writable Directories Exist
         run: |

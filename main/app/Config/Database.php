@@ -1,3 +1,4 @@
+
 <?php
 
 namespace Config;
@@ -33,7 +34,7 @@ class Database extends Config
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
-        'DBDebug'      => false,
+        'DBDebug'      => (bool) env('database.default.DBDebug', true),
         'charset'      => 'utf8mb4',
         'DBCollat'     => 'utf8mb4_general_ci',
         'swapPre'      => '',
