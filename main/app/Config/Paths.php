@@ -40,11 +40,14 @@ class Paths
         if (! is_dir($this->writableDirectory)) {
             @mkdir($this->writableDirectory, 0777, true);
         }
+        @chmod($this->writableDirectory, 0777);
+
         foreach (['cache', 'logs', 'session', 'uploads', 'debugbar'] as $sub) {
             $subPath = rtrim($this->writableDirectory, '\\/ ') . '/' . $sub;
             if (! is_dir($subPath)) {
                 @mkdir($subPath, 0777, true);
             }
+            @chmod($subPath, 0777);
         }
     }
 
