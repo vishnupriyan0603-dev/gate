@@ -35,6 +35,17 @@ class Paths
         } else {
             $this->systemDirectory = __DIR__ . '/../../vendor/codeigniter4/framework/system';
         }
+
+        // Auto-create writable directories if not present
+        if (! is_dir($this->writableDirectory)) {
+            @mkdir($this->writableDirectory, 0777, true);
+        }
+        foreach (['cache', 'logs', 'session', 'uploads', 'debugbar'] as $sub) {
+            $subPath = rtrim($this->writableDirectory, '\\/ ') . '/' . $sub;
+            if (! is_dir($subPath)) {
+                @mkdir($subPath, 0777, true);
+            }
+        }
     }
 
     /**

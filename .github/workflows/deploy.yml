@@ -88,6 +88,12 @@ jobs:
             sed -i "s/'password' => env('database.default.password', '')/'password' => env('database.default.password', '$DB_PASSWORD')/g" main/app/Config/Database.php
           fi
 
+      - name: 📁 Ensure Writable Directories Exist
+        run: |
+          mkdir -p main/writable/cache main/writable/logs main/writable/session main/writable/uploads main/writable/debugbar
+          touch main/writable/index.html main/writable/cache/index.html main/writable/logs/index.html main/writable/session/index.html main/writable/uploads/index.html main/writable/debugbar/index.html
+          chmod -R 777 main/writable
+
       - name: 🚀 Deploy to InfinityFree via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
